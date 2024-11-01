@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+
+    <title>DncWeather</title>
+</head>
+
+<body>
+    <main>
+
+        <nav id="presentation-container">
+            <header id="top-holder">
+                <div id="logo">
+                    <a href="">
+                        <h1>DncWeather</h1>
+                    </a>
+                </div>
+                <div id="end-prev">
+                    <a href="">
+                        <h2 id="end">Endereços</h2>
+                    </a>
+                    <a href="">
+                        <h2>Previsão de tempo</h2>
+                    </a>
+                </div>
+            </header>
+
+            <article class="article-container">
+
+                <div class="grid-container">
+                    <h1>
+                        Descubra Mais com Precisão: <br> Previsões
+                        do Tempo e endereços <br> em tempo real.
+                    </h1>
+                </div>
+
+                <img src="img/nuvem.png" alt="">
+
+            </article>
+
+
+            <div class="build">
+                <form onsubmit="handleFormSubmit();return false">
+
+
+
+                    <label>Primeiro Nome:</label>
+
+                    <input type="text" placeholder="Insira seu primeiro nome:" name="Name" required>
+
+                    <label>E-mail:</label>
+
+                    <input type="text" placeholder="Insira seu e-mail" name="Email" required>
+
+                    <label for="cep">Digite o CEP:</label>
+
+                    <input id="cep" type="text" placeholder="Insira o CEP" required>
+
+                    <label>Digite a latitude e longitude para saber a previsão:</label>
+
+
+                    <div class="input-lat">
+                        <input id="latitude" class="lat-long" type="text" placeholder="Latitude" name="Name" required>
+                        <input id="longitude" class="lat-long" type="text" placeholder="Longitude" name="Name" required>
+                    </div>
+
+
+
+                    <button class="button" >Acessar</button>
+
+                </form>
+
+                <article class="resultado-cep">
+
+                    <div class="logo-cep">
+                        <h1>
+                            Resultado da busca por CEP:
+                        </h1>
+                    </div>
+
+                    <img src="img/cep.png" alt="">
+
+                </article>
+
+                <div class="tabela">
+                    <div class="linha-cabecalho">
+                        <div class="coluna">Logradouro/nome</div>
+                        <div class="coluna">Bairro/Distrito</div>
+                        <div class="coluna">Localidade/UF</div>
+                    </div>
+                    <div class="linha">
+                        <div id="endereco" class="coluna"></div>
+                        <div id="bairro" class="coluna"></div>
+                        <div id="cidade" class="coluna"></div>
+                    </div>
+
+                </div>
+
+                <article class="resultado-lat-long">
+
+                    <div class="logo-lat-long">
+                        <h1>
+                            Previsão do tempo na região:
+                        </h1>
+                    </div>
+
+                    <img src="img/nuvem1.png" alt="">
+
+                </article>
+
+                <div class="result-temp">
+                    <p id="temperatura" class="result-temp-text"></p>
+                </div>
+
+            </div>
+
+
+            <footer>
+                <div class="linha1">
+
+                    <a href="">
+                        <h2>Termos de Uso</h2>
+                    </a>
+                    <div class="vertical-divider"></div>
+                    <a href="">
+                        <h2>Política de Privacidade</h2>
+                    </a>
+
+                </div>
+            </footer>
+        </nav>
+    </main>
+</body>
+
+</html>
